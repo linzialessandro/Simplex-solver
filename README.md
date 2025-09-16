@@ -4,9 +4,10 @@ A simple Python implementation of the Simplex algorithm for solving Linear Progr
 
 ## Features
 
-*   Solves Linear Programming problems using the Simplex algorithm.
+*   Solves Linear Programming problems using the two-phase Simplex algorithm.
 *   Supports maximization problems.
-*   Handles constraints of the form `Ax <= b`.
+*   Handles constraints of the form `Ax <= b`, `Ax >= b`, and `Ax = b`.
+*   Handles negative values in the right-hand side of the constraints.
 *   Assumes non-negativity constraints (`x >= 0`).
 *   Detects unbounded and infeasible problems.
 *   Uses Bland's Rule for pivot selection to prevent cycling.
@@ -39,14 +40,14 @@ pip install numpy
 The solver expects problems in the following standard form:
 
 **Maximize:** `Z = c^T * x`
-**Subject to:** `A * x <= b`
+**Subject to:** `A * x [<, >, =] b`
 **And:** `x >= 0` (non-negativity is assumed)
 
 You will be prompted to enter:
 *   The number of variables.
 *   The coefficients of the objective function (`c`), space-separated.
 *   The number of constraints.
-*   For each constraint, the coefficients of `A` and the right-hand side `b` value, space-separated.
+*   For each constraint, the coefficients of `A`, the constraint type (`<=`, `>=`, or `==`), and the right-hand side `b` value, space-separated.
 
 ## Example
 
