@@ -1,6 +1,6 @@
 # Simplex Solver
 
-A simple Python implementation of the Simplex algorithm for solving Linear Programming problems. This solver is designed to handle maximization problems in standard form.
+A simple Python implementation of the Simplex algorithm for solving Linear Programming problems. 
 
 ## Features
 
@@ -37,7 +37,7 @@ pip install numpy
 
 ## Problem Input Format
 
-The solver expects problems in the following standard form:
+The solver accepts problems in the following general form:
 
 **Maximize:** `Z = c^T * x`
 **Subject to:** `A * x [<, >, =] b`
