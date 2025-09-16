@@ -1,1 +1,4 @@
 numpy
+black
+flake8
+pytest
