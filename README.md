@@ -65,8 +65,8 @@ You would enter:
 Enter the number of variables: 2
 Enter the 2 coefficients of the objective function (space-separated): 3 2
 Enter the number of constraints: 2
-Constraint 1 (2 coefficients and 1 RHS value, space-separated): 1 1 4
-Constraint 2 (2 coefficients and 1 RHS value, space-separated): 2 1 5
+Constraint 1 (2 coefficients, a type from ['<=', '>=', '=='], and 1 RHS value, space-separated): 1 1 <= 4
+Constraint 2 (2 coefficients, a type from ['<=', '>=', '=='], and 1 RHS value, space-separated): 2 1 <= 5
 ```
 
 ## License
