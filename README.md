@@ -40,7 +40,7 @@ pip install numpy
 The solver accepts problems in the following general form:
 
 **Maximize:** `Z = c^T * x`
-**Subject to:** `A * x [<, >, =] b`
+**Subject to:** `A * x [≤, ≥, =] b`
 **And:** `x >= 0` (non-negativity is assumed)
 
 You will be prompted to enter:
